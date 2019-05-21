@@ -28,7 +28,7 @@ field.addEventListener('click', (e) => {
   ballCoord.x = field.clientWidth - ball.clientWidth;
 }
 
- if (ballCoord.x > 161) {
+ if (ballCoord.x > 161) { // why you need this?
    ballCoord.x = 161;
  }
 
