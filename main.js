@@ -21,17 +21,12 @@ field.addEventListener('click', (e) => {
  } 
 
  if (ballCoord.y + ball.clientHeight > field.clientHeight) {
-    ballCoord.y = field.clientHeight - ball.clientHeight;
+  ballCoord.y = field.clientHeight - ball.clientHeight;
  }
 
  if (ballCoord.x + ball.clientWidth > field.clientWidth) {
   ballCoord.x = field.clientWidth - ball.clientWidth;
 }
-
- if (ballCoord.x > 161) {
-   ballCoord.x = 161;
- }
-
 
  ball.style.cssText = `top: ${ballCoord.y}px; left: ${ballCoord.x}px`;
 
